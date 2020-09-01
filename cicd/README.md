@@ -112,3 +112,14 @@ Go to AWS Console ->  Developer Tools -> CodePipeline -> Pipelines
 ```
 cdk destroy PipelineStack 
 ```
+
+```
+Are you sure you want to delete: PipelineStack (y/n)? y
+PipelineStack: destroying...
+11:21:26 PM | DELETE_IN_PROGRESS   | AWS::CloudFormation::Stack  | PipelineStack
+11:22:34 PM | DELETE_IN_PROGRESS   | AWS::IAM::Role              | Pipeline/Dev/Creat...PipelineActionRole
+11:22:34 PM | DELETE_IN_PROGRESS   | AWS::IAM::Role              | Pipeline/Build/Bui...PipelineActionRole
+11:22:34 PM | DELETE_IN_PROGRESS   | AWS::IAM::Role              | Build/Role
+
+ ✅  PipelineStack: destroyed
+ ```
